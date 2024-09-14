@@ -14,7 +14,7 @@ const NewProducts = () => {
     {
       id: 1,
       img: "/4.jpg",
-      title: "Cosmetics Sale",
+      title: "Summer Sale",
       desc: "Mens Casual Slim Fit T-Shirts.",
       rating: "3",
       price: "$50",
@@ -30,7 +30,7 @@ const NewProducts = () => {
     {
       id: 3,
       img: "/6.jpg",
-      title: "Summer Sale",
+      title: "jewelery Sale",
       desc: "White Gold Plated Princess.",
       rating: "2",
       price: "$150",
@@ -38,7 +38,7 @@ const NewProducts = () => {
     {
       id: 4,
       img: "/th (1).jpeg" ,
-      title: "Cosmetics Sale",
+      title: "Summer Sale",
       desc: "MBJ Women's Solid Short Sleeve Boat Neck V.",
       rating: "5",
       price: "$40",
@@ -46,7 +46,7 @@ const NewProducts = () => {
     {
       id: 5,
       img: "/8.jpg",
-      title: "Cosmetics Sale",
+      title: "Electronic Sale",
       desc: "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra.",
       rating: "3",
       price: "$350",
@@ -54,7 +54,7 @@ const NewProducts = () => {
     {
       id: 6,
       img: "/9.jpg",
-      title: "Summer Sale",
+      title: "Electronic Sale",
       desc: "Samsung 49-Inch CHG90 144Hz Curved Gaming .",
       rating: "5",
       price: "$500",
@@ -62,7 +62,7 @@ const NewProducts = () => {
     {
       id: 7,
       img: "/OIP.jpeg",
-      title: "Cosmetics Sale",
+      title: "Electronic Sale",
       desc: "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra.",
       rating: "2",
       price: "$40",
@@ -70,7 +70,7 @@ const NewProducts = () => {
     {
       id: 8,
       img: "/3.jpg",
-      title: "Cosmetics Sale",
+      title: "summer Sale",
       desc: "Opna Women's Short Sleeve Moisture.",
       rating: "4",
       price: "$70",
@@ -78,7 +78,7 @@ const NewProducts = () => {
     {
       id: 9,
       img: "/OIP (1).jpeg",
-      title: "Summer Sale",
+      title: "Electronic Sale",
       desc: "Samsung 49-Inch CHG90 144Hz Curved Gaming.",
       rating: "5",
       price: "$90",
@@ -86,7 +86,7 @@ const NewProducts = () => {
     {
       id: 10,
       img: "/10.jpg",
-      title: "Cosmetics Sale",
+      title: "Women Sale",
       desc: "BIYLACLESEN Women's 3-in-1 Snowboard Jacket .",
       rating: "5",
       price: "$50",
