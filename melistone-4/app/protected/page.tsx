@@ -1,13 +1,9 @@
-import { EnvVarWarning } from "@/components/env-var-warning";
 import FetchDataSteps from "@/components/tutorial/fetch-data-steps";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import { createClient } from "@/utils/supabase/server";
 import { InfoIcon } from "lucide-react";
 import { redirect } from "next/navigation";
-import HeaderAuth from "@/components/header-auth";
 
 export default async function ProtectedPage() {
-  {!hasEnvVars ?  <EnvVarWarning /> : <HeaderAuth /> }
   const supabase = createClient();
 
   const {
@@ -19,8 +15,6 @@ export default async function ProtectedPage() {
   }
 
   return (
-   
-                 
     <div className="flex-1 w-full flex flex-col gap-12">
       <div className="w-full">
         <div className="bg-accent text-sm p-3 px-5 rounded-md text-foreground flex gap-3 items-center">

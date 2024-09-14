@@ -28,16 +28,6 @@ const Footer = () => {
                 Returns & Exchanges
               </Link>
             </li>
-            <li className="mb-2">
-              <Link href="#" className="hover:text-gray-400">
-                Shipping Information
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:text-gray-400">
-                Contact Us
-              </Link>
-            </li>
           </ul>
         </div>
 
@@ -47,22 +37,12 @@ const Footer = () => {
           <ul>
             <li className="mb-2">
               <Link href="#" className="hover:text-gray-400">
-              Men's Collection
+                Men's Collection
               </Link>
             </li>
             <li className="mb-2">
               <Link href="#" className="hover:text-gray-400">
                 Women's Collection
-              </Link>
-            </li>
-            <li className="mb-2">
-              <Link href="#" className="hover:text-gray-400">
-                Kids' Collection
-              </Link>
-            </li>
-            <li>
-              <Link href="#" className="hover:text-gray-400">
-                Sale
               </Link>
             </li>
           </ul>
