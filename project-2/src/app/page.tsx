@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
       <div className="bg-[url('/12.jpg')] bg-cover bg-center bg-no-repeat relative">
-        <div className="relative min-h-[550px] w-full h-auto md:h-[550px] p-4 md:p-10 flex justify-center items-center text-center z-0">
+        <div className="relative min-h-[650px] w-full h-auto md:h-[550px] p-4 md:p-10 flex justify-center items-center text-center z-0">
           <div className="relative z-10">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold  md:pt-10 bg-gradient-to-r from-yellow-400 to-orange-700 bg-clip-text text-transparent">
               Hello, I Am Sidra Raza
