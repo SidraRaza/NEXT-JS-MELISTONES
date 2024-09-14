@@ -1,9 +1,11 @@
-import Image from "next/image";
 
-export default function Home() {
+import React from 'react'
+
+const page = () => {
   return (
-   <div className="text-center py-20 text-3xl">
-    <h1>Hello World!</h1>
-   </div>
-  );
+    <div className='text-3xl text-center py-24'>Hello, World!</div>
+  )
 }
+
+export default page
+

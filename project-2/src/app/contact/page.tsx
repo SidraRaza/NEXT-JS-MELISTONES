@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Header from '@/components/Header';
+import Header from '@/app/components/Header';
 
 export default function AboutHeader() {
   return (
