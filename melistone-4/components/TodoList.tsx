@@ -53,7 +53,7 @@ const TodoList: React.FC = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100 px-4">
       <div className="w-full max-w-md sm:max-w-lg md:max-w-xl p-8 bg-white shadow-lg rounded-lg">
         <h1 className="text-3xl sm:text-4xl font-extrabold text-center text-blue-500 mb-6 sm:mb-8">
-          To-Do List
+    Blog
         </h1>
         <div className="flex mb-5 space-x-3">
           <input

@@ -5,7 +5,18 @@ import { createClient } from "@/utils/supabase/server";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 
+const redirectIfAuthenticated = async () => {
+  const supabase = createClient();
+  const { data: { session } } = await supabase.auth.getSession();
+  if (session) {
+    // Redirect authenticated users to the products page
+    return redirect("/products");
+  }
+};
+
 export const signUpAction = async (formData: FormData) => {
+  await redirectIfAuthenticated(); // Redirect if already authenticated
+
   const email = formData.get("email")?.toString();
   const password = formData.get("password")?.toString();
   const supabase = createClient();
@@ -36,6 +47,8 @@ export const signUpAction = async (formData: FormData) => {
 };
 
 export const signInAction = async (formData: FormData) => {
+  await redirectIfAuthenticated(); // Redirect if already authenticated
+
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
   const supabase = createClient();
@@ -49,10 +62,12 @@ export const signInAction = async (formData: FormData) => {
     return encodedRedirect("error", "/sign-in", error.message);
   }
 
-  return redirect("/products");
+  return redirect("/products"); // Redirect to products page after successful sign-in
 };
 
 export const forgotPasswordAction = async (formData: FormData) => {
+  await redirectIfAuthenticated(); // Redirect if already authenticated
+
   const email = formData.get("email")?.toString();
   const supabase = createClient();
   const origin = headers().get("origin");
@@ -87,13 +102,15 @@ export const forgotPasswordAction = async (formData: FormData) => {
 };
 
 export const resetPasswordAction = async (formData: FormData) => {
+  await redirectIfAuthenticated(); // Redirect if already authenticated
+
   const supabase = createClient();
 
   const password = formData.get("password") as string;
   const confirmPassword = formData.get("confirmPassword") as string;
 
   if (!password || !confirmPassword) {
-    encodedRedirect(
+    return encodedRedirect(
       "error",
       "/protected/reset-password",
       "Password and confirm password are required",
@@ -101,7 +118,7 @@ export const resetPasswordAction = async (formData: FormData) => {
   }
 
   if (password !== confirmPassword) {
-    encodedRedirect(
+    return encodedRedirect(
       "error",
       "/protected/reset-password",
       "Passwords do not match",
@@ -113,14 +130,14 @@ export const resetPasswordAction = async (formData: FormData) => {
   });
 
   if (error) {
-    encodedRedirect(
+    return encodedRedirect(
       "error",
       "/protected/reset-password",
       "Password update failed",
     );
   }
 
-  encodedRedirect("success", "/protected/reset-password", "Password updated");
+  return encodedRedirect("success", "/protected/reset-password", "Password updated");
 };
 
 export const signOutAction = async () => {
