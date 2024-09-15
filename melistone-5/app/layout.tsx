@@ -46,8 +46,8 @@ export default function RootLayout({
                       <DeployButton />
                     </div> */}
                   {/* </div> */}
-                  
-                  {/* {!hasEnvVars ?  <EnvVarWarning /> : <HeaderAuth /> } */}
+{/*                   
+                  {!hasEnvVars ?  <EnvVarWarning /> : <HeaderAuth /> } */}
                  
                 
                 
