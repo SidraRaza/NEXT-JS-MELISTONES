@@ -13,7 +13,7 @@ export default async function Index() {
     <>
      <Navbar />
      <div className="min-h-screen bg-gray-200 text-center pt-36 text-4xl ">
-     Well come to my TodoList App
+     Well come to my  App
     </div>
    
     </>
