@@ -18,7 +18,7 @@ interface Post {
   
     return (
     
-           <div className="w-[300px] mx-auto p-8 my-40 text-center border-2 border-white shadow-lg bg-white">
+           <div className="w-[300px] mx-auto p-8 h-[600px] text-center border-2 border-white shadow-lg bg-white">
         <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
         <p className="text-lg">{post.content}</p>
   
