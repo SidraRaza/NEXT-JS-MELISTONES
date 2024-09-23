@@ -1,0 +1,65 @@
+/* Container for image and content */
+.about-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+margin-top: 70px;
+ 
+}
+.bg {
+  padding: 60px 20px;
+  background-image: url('/12.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Image styling */
+.about-header-image {
+  margin-bottom: 20px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for image */
+.image:hover {
+  transform: scale(1.05);
+}
+
+/* Content styling */
+.about-header-content {
+  max-width: 700px;
+  text-align: center;
+}
+
+.about-header-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-header-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Adjust layout on larger screens */
+@media (min-width: 640px) {
+  .about-header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-header-image {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .about-header-content {
+    text-align: left;
+  }
+}

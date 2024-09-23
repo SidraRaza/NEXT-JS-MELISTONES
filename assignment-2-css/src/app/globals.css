@@ -1,0 +1,131 @@
+
+
+/* Basic Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(to right, #fbbf24, #f97316);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  color: #ffffff;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  display: none;
+}
+
+/* Navigation Styles */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f2937;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 200px;
+  padding: 16px;
+  display: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.nav-item {
+  margin-bottom: 10px;
+}
+
+.nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #f97316;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+  }
+
+  .nav-item {
+    margin-left: 24px;
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    padding: 10px 16px;
+  }
+}
+
+.menu-toggle:checked ~ .nav-list {
+  display: flex;
+}
+
+/* globals.css */
+.Heading {
+  display: flex;
+  justify-content: center; 
+  align-items: center; /* Centers vertically */
+  font-size: 30px;
+  padding-top: 100px;
+  font-weight: bold;
+  color: white;
+
+  /* height: 100vh; Optional: Sets height to full viewport height */
+}
+.bg{
+  background-color: black;
+  height: 550px;
+}
+
