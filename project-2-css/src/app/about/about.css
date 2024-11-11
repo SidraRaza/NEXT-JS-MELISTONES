@@ -1,15 +1,17 @@
-/* Container for image and content */
+
 .about-header-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 margin-top: 70px;
+justify-content: center;
  
 }
 .bg {
   padding: 60px 20px;
-  background-image: url('/12.jpg');
+  /* background-image: url('/12.jpg'); */
+  background-color: rgb(253, 249, 249);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,29 +20,50 @@ margin-top: 70px;
 /* Image styling */
 .about-header-image {
   margin-bottom: 20px;
+  margin-left: 8%;
+
 }
 
 .image {
-  max-width: 100%;
+  max-width: 90%;
   height: auto;
   transition: transform 0.3s ease;
+  border-radius: 20px;
 }
 
 /* Hover effect for image */
 .image:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(236, 85, 85);
 }
 
 /* Content styling */
 .about-header-content {
-  max-width: 700px;
+  max-width: 600px;
   text-align: center;
+  margin-right: 8%;
+  color: black;
 }
 
 .about-header-title {
+  /* margin-top: 0px; */
   font-size: 2rem;
-  margin-bottom: 10px;
+  /* margin-bottom: 20px; */
+ 
 }
+#about {
+  background-color: rgb(236, 85, 85);
+  padding: 10px;
+  rotate: -5deg;
+  width: 180px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This centers vertically */
+  margin: 40px auto; /* This centers horizontally */
+}
+
 
 .about-header-description {
   font-size: 1rem;
@@ -61,5 +84,22 @@ margin-top: 70px;
 
   .about-header-content {
     text-align: left;
+   
+  }
+  .about-header-description{
+    align-items: justify;
+  }
+  /* .about-header-title{
+    margin-right: 130px;
+    margin-left: -60px;
+  } */
+}
+@media only screen and (max-width: 750px){
+  #about-description{
+    align-items: justify;
+
+  }
+  .about-header-content{
+    text-align: justify;
   }
 }

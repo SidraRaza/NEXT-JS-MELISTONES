@@ -1,0 +1,172 @@
+
+/* skills */
+ 
+.skills-body {
+  width: 100%;
+  max-width: 1315px;
+  height: auto;
+  background-color: rgb(254, 253, 253);
+  color: rgb(188, 105, 46);
+  font-family: Arial, Georgia, Times, "Times New Roman", serif;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.skill-heading {
+  background-color: rgb(236, 85, 85);
+  padding: 10px;
+  rotate: -5deg;
+  width: 180px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This centers vertically */
+  margin: 40px auto;
+ 
+}
+
+
+.skills-area {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+
+.skill {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.skill-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+
+  /* border: 1px solid rgb(236, 85, 85); */
+
+}
+
+.skill-bar {
+    width: 100%;
+    background: rgb(238, 180, 180); /* Light background color */
+    height: 30px;
+    border-radius: 100px;
+    overflow: hidden; /* Keeps .skill-fill within bounds */
+    position: relative;
+  }
+  
+  .skill-fill {
+    background: black; /* Fill color */
+    height: 100%; /* Matches the height of .skill-bar */
+    border-radius: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding-right: 5px;
+  }
+  
+
+.skill-percent {
+  font-size: 20px;
+  color: white;
+}
+
+.html {
+  animation: html 2s;
+  width: 80%;
+}
+
+.css {
+  animation: css 2s;
+  width: 85%;
+}
+
+.Python {
+  animation: Python 2s;
+  width: 65%;
+}
+
+.ts {
+  animation: ts 2s;
+  width: 90%;
+}
+
+@keyframes html {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes Python {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes ts {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 750px) {
+  .skills-area {
+    padding: 0 5%;
+  }
+
+  .skill-title {
+    font-size: 25px;
+  }
+
+  .skill-bar, .skill-fill {
+    height: 30px;
+  }
+
+  .skill-percent {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skill-heading {
+    font-size: 35px;
+  }
+
+  .skill-title {
+    font-size: 22px;
+  }
+
+  .skill-bar, .skill-fill {
+    height: 25px;
+  }
+
+  .skill-percent {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+
+  .skills-body {
+    padding: 15px;
+  }
+}

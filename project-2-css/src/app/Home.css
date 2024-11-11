@@ -1,6 +1,7 @@
 /* Home.css */
 .background-image {
-  background-image: url('/12.jpg');
+  /* background-image: url('/12.jpg'); */
+  background-color: rgb(254, 253, 253);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,17 +26,23 @@
   font-size: 24px;
   font-weight: bold;
   color: transparent;
-  background-image: linear-gradient(to right, #facc15, #ea580c);
+  background-color: rgb(236, 85, 85);
   background-clip: text;
   -webkit-background-clip: text;
   margin-bottom: 20px;
   top: 10px;
+  
+}
+#hello{
+  color: rgb(236, 85, 85);
+  margin-right: 480px;
 }
 
 .description {
   font-size: 16px;
-  color: white;
+  color: black;
   text-align: justify;
+  line-height: 30px;
 }
 
 /* Responsive Styles */
@@ -62,3 +69,521 @@
     font-size: 20px;
   }
 }
+/* About css */
+
+.about-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+margin-top: 70px;
+justify-content: center;
+ 
+}
+.bg {
+  padding: 60px 20px;
+  /* background-image: url('/12.jpg'); */
+  background-color: rgb(253, 249, 249);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Image styling */
+.about-header-image {
+  margin-bottom: 20px;
+  margin-left: 8%;
+
+}
+
+.image {
+  max-width: 90%;
+  height: auto;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+/* Hover effect for image */
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgb(236, 85, 85);
+}
+
+/* Content styling */
+.about-header-content {
+  max-width: 600px;
+  text-align: center;
+  margin-right: 8%;
+  color: black;
+}
+
+.about-header-title {
+  /* margin-top: 0px; */
+  font-size: 2rem;
+  /* margin-bottom: 20px; */
+ 
+}
+#about {
+  background-color: rgb(236, 85, 85);
+  padding: 10px;
+  rotate: -5deg;
+  width: 180px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This centers vertically */
+  margin: 40px auto; /* This centers horizontally */
+}
+
+
+.about-header-description {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Adjust layout on larger screens */
+@media (min-width: 640px) {
+  .about-header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-header-image {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .about-header-content {
+    text-align: left;
+   
+  }
+  .about-header-description{
+    align-items: justify;
+  }
+  /* .about-header-title{
+    margin-right: 130px;
+    margin-left: -60px;
+  } */
+}
+@media only screen and (max-width: 750px){
+  #about-description{
+    align-items: justify;
+
+  }
+  .about-header-content{
+    text-align: justify;
+  }
+}
+/* skills */
+ 
+
+/* skills */
+ 
+.skills-body {
+  width: 100%;
+  max-width: 1315px;
+  height: auto;
+  background-color: rgb(254, 253, 253);
+  color: rgb(188, 105, 46);
+  font-family: Arial, Georgia, Times, "Times New Roman", serif;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.skill-heading {
+  background-color: rgb(236, 85, 85);
+  padding: 10px;
+  rotate: -5deg;
+  width: 180px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This centers vertically */
+  margin: 40px auto;
+ 
+}
+
+
+.skills-area {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20%;
+}
+
+.skill {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.skill-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: black;
+
+  /* border: 1px solid rgb(236, 85, 85); */
+
+}
+
+.skill-bar {
+    width: 100%;
+    background: rgb(238, 180, 180); /* Light background color */
+    height: 20px;
+    border-radius: 100px;
+    overflow: hidden; /* Keeps .skill-fill within bounds */
+    position: relative;
+  }
+  
+  .skill-fill {
+    background: black; /* Fill color */
+    height: 100%; /* Matches the height of .skill-bar */
+    border-radius: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding-right: 5px;
+  }
+  
+
+.skill-percent {
+  font-size: 20px;
+  color: white;
+}
+
+.html {
+  animation: html 2s;
+  width: 80%;
+}
+
+.css {
+  animation: css 2s;
+  width: 85%;
+}
+
+.Python {
+  animation: Python 2s;
+  width: 65%;
+}
+
+.ts {
+  animation: ts 2s;
+  width: 90%;
+}
+
+@keyframes html {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes Python {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 65%;
+  }
+}
+
+@keyframes ts {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 750px) {
+  .skills-area {
+    padding: 0 5%;
+  }
+
+  .skill-title {
+    font-size: 25px;
+  }
+
+  .skill-bar, .skill-fill {
+    height: 30px;
+  }
+
+  .skill-percent {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .skill-heading {
+    font-size: 35px;
+  }
+
+  .skill-title {
+    font-size: 22px;
+  }
+
+  .skill-bar, .skill-fill {
+    height: 25px;
+  }
+
+  .skill-percent {
+    font-size: 16px;
+    padding-right: 15px;
+  }
+
+  .skills-body {
+    padding: 15px;
+  }
+}
+/* Contact css */
+
+
+  
+.contact-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 20px; /* Adjusted padding for smaller screens */
+  background-color: rgb(253, 249, 249);
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-heading {
+  margin-bottom: 40px;
+  background-color: rgb(236, 85, 85);
+  padding: 10px;
+  rotate: -5deg;
+  width: 180px;
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* This centers vertically */
+  margin: 40px auto; 
+}
+
+.contact-para {
+  font-weight: 100;
+  color: black;
+  padding-top: 20px;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  justify-content: center; /* Allow items to wrap on smaller screens */
+}
+
+.contact-inf {
+  width: 48%; /* Reduced width for better responsiveness */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px; /* Added margin for spacing on smaller screens */
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  min-width: 60px;
+  height: 60px;
+  /* background: rgb(254, 253, 253); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #333;
+  margin-right: 15px;
+}
+
+.text {
+  font-size: 16px;
+  color: black;
+  font-weight: 300;
+  justify-content: left;
+}
+
+.Address {
+  font-weight: 300;
+  color: black;
+  margin-right: 80px;
+  justify-content: left;
+}
+
+.link {
+  font-weight: 300;
+  color: black;
+  margin: 0;
+  text-decoration: none;
+  justify-content: left;
+}
+
+.contactform {
+  width: 38%; /* Reduced width for better responsiveness */
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; /* Added margin for spacing on smaller screens */
+}
+
+.form-heading {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.input-box input,
+.input-box textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: #f0f0f0;
+}
+
+.input-box input,.input-box textarea:hover{
+border: 1px solid #333;
+}
+
+.input-box span {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background: white;
+  padding: 0 5px;
+  color: #333;
+  font-size: 14px;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.input-box input:focus + span,
+.input-box textarea:focus + span,
+.input-box input:not(:placeholder-shown) + span,
+.input-box textarea:not(:placeholder-shown) + span {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+.input-box input[type="submit"] {
+  background: #333;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.input-box input[type="submit"]:hover {
+  background: #555;
+}
+
+/* Back to top button */
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: rgb(236, 85, 85);
+  color: black;
+  padding: 15px;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  z-index: 99;
+}
+
+#backToTopBtn:hover {
+  background-color: rgb(238, 180, 180);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .contact-inf,
+  .contactform {
+    width: 100%;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-heading {
+    font-size: 18px;
+  }
+
+  .contact-heading {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-heading {
+    font-size: 22px;
+  }
+
+  .form-heading {
+    font-size: 16px;
+  }
+
+  .contact-container {
+    padding: 0 10px;
+  }
+
+  #backToTopBtn {
+    font-size: 16px;
+    padding: 8px;
+    bottom: 15px;
+    right: 20px;
+  }
+}
+
+  
