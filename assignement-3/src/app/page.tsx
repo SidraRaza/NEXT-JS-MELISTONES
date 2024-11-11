@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     
-      <main className="max-w-[600px] h-[460px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <main className="max-w-[600px] h-[660px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <section className="text-center pt-24">
           <h1 className="text-4xl font-bold">Welcome to My Blog!</h1>
           <p className="mt-4 text-lg text-gray-600">
