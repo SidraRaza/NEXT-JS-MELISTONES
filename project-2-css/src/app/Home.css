@@ -29,8 +29,8 @@
   background-color: rgb(236, 85, 85);
   background-clip: text;
   -webkit-background-clip: text;
-  margin-bottom: 20px;
-  top: 10px;
+/*   margin-bottom: 20px; */
+  top: 0px;
   
 }
 #hello{
