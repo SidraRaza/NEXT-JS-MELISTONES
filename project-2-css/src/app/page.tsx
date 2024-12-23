@@ -6,7 +6,11 @@ import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
+<<<<<<< HEAD
 import {  FaArrowUp, FaEnvelope, FaLinkedin, FaLocationArrow, FaPhone } from 'react-icons/fa';
+=======
+import { FaArrowUp, FaEnvelope, FaLinkedin, FaLocationArrow, FaPhone } from 'react-icons/fa';
+>>>>>>> daa78b245a5a27e29c16da6b7b9f995098c5f1b1
 import Typewriter from 'typewriter-effect';
 export default function Home() {
   useState(() => {

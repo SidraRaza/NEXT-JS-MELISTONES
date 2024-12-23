@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 750px;
+  min-height: 650px;
   /* height: 450px; */
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@
   background-clip: text;
   -webkit-background-clip: text;
   margin-bottom: 20px;
-  top: 10px;
+  top: 0px;
   
 }
 #hello{
